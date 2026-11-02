@@ -11,6 +11,6 @@ jobs:
   museflowcheck: # the check's name; branch protection requires it
     runs-on: ubuntu-latest
     steps:
-      - uses: Aminesikz/MuseFlowCheck@main
+      - uses: Aminesikz/MuseFlowCheck@dd5ea98fd792ca5298c63d41f6af05a22cd6cb5b
         with:
           api-key: ${{ secrets.META_API_KEY }}
