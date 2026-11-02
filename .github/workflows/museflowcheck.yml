@@ -1,0 +1,16 @@
+name: MuseFlowCheck
+
+on:
+  pull_request:
+
+permissions:
+  contents: read
+  pull-requests: write # inline review comments and the summary comment
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: Aminesikz/MuseFlowCheck@github-action
+        with:
+          api-key: ${{ secrets.META_API_KEY }}
