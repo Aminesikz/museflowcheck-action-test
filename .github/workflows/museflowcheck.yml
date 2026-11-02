@@ -8,7 +8,7 @@ permissions:
   pull-requests: write # inline review comments and the summary comment
 
 jobs:
-  scan:
+  museflowcheck: # the check's name; branch protection requires it
     runs-on: ubuntu-latest
     steps:
       - uses: Aminesikz/MuseFlowCheck@github-action
